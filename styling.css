@@ -1,0 +1,160 @@
+/*body settings*/
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: themefont;
+}
+
+/*theme colours and fonts*/
+@font-face {
+    font-family: themefont;
+    src: url(/Fonts/Crimson_Text/CrimsonText-Regular.ttf);
+}
+
+:root {
+    --themeblack: rgba(18, 18, 18, 1);
+    --themewhite: rgb(255, 255, 255, 1);
+    --themegreen: rgba(77, 136, 65, 1);
+    --themedarkgreen: rgba(63, 110, 53, 1);
+    --themetranslucentgreen: rgba(63, 110, 53, 0.6); /*used for hero image*/ 
+}
+
+
+/*text formatting*/
+.themetext {
+    font-size: 16px;
+    font-family: themefont;
+    color : var(--themeblack);
+    margin: 30px;
+    border: 30px;
+    padding: 0px;
+    height : 60px;
+    text-align : justify;
+    line-height: 1.6;
+    white-space: wrap;
+}
+
+::selection {
+    color: var(--themewhite);
+    background: var(--themegreen); /* Change highlight colour */
+}
+
+
+/*list*/
+ul.themelist {
+    font-size: 16px;
+    font-family: themefont;
+    color : var(--themeblack);
+    margin: 30px;
+    border: 30px;
+    padding: 40px;
+    height : 60px;
+    text-align : justify;
+    line-height: 1.6;
+    white-space: wrap;
+    list-style-type: circle;
+}
+
+
+/*header*/
+.themeheader {
+    font-family: themefont;
+    color : var(--themewhite);
+    width : 100%;
+    background-color: var(--themegreen);
+    height : 60px;
+    text-align: center;
+    line-height: 80px;
+}
+
+
+/* hero image */
+.homeheroimage {
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/alex-dukhanov-mrTYJBU9Vls-unsplash.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page1heroimage {
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/david-edelstein-VO5yUwRosiY-unsplash.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page2heroimage {
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/faye-cornish-Uq3gTiPlqRo-unsplash.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page3heroimage {
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page4heroimage {
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/matthew-smith-rFBA42UFpLs-unsplash.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.storyboardheroimage {
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/simon-wilkes-S297j2CsdlM-unsplash.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--themewhite);
+}
+
+
+/*sticky navigation bar*/
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--themegreen);
+    position:sticky;
+    top: 0;
+}
+    
+li a {
+    float: right;
+    display: block;
+    color: var(--themewhite);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+    
+li a:hover:not(.active) {
+    background-color: var(--themedarkgreen);
+    transition: background-color 0.5s
+    }
