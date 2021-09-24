@@ -18,17 +18,89 @@
 
     <!-- Navigation Bar -->
     <ul class = "nav">
-        <li style="float:left"><a href="index.html">Home</a></li>
-        <li><a href="page5.html">Storyboard</a></li>
-        <li><a href="page4.html">To Do List</a></li>
-        <li><a href="page3.html">Motivation</a></li>
-        <li><a href="page2.html">Meditation</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="page1.html">Buttons</a></li>
+        <li><a href="page2.html">Meditation</a></li>
+        <li><a href="page3.html">Motivation</a></li>
+        <li><a href="page4.html">To Do List</a></li>
+        <li><a href="page5.html">Storyboard</a></li>
     </ul>
 
     <div class = "themetext">
         <p>Write down tasks you need to complete.</p>
     </div>
 
+    <div id="myDIV" class="header">
+        <input type="text" id="myInput" placeholder="Add task...">
+        <span onclick="newElement()" class="addBtn">Add</span>
+      </div>
+      
+      <ul id="myUL">
+        <li>Drink water</li>
+        <li>Exercise</li>
+        <li>Meet George</li>
+        <li>Buy eggs</li>
+        <li>Read a book</li>
+        <li>Organize office</li>
+      </ul>
+      
+      <script>
+      // Create a "close" button and append it to each list item
+      var myNodelist = document.getElementsByTagName("LI");
+      var i;
+      for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+      }
+      
+      // Click on a close button to hide the current list item
+      var close = document.getElementsByClassName("close");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";
+        }
+      }
+      
+      // Add a "checked" symbol when clicking on a list item
+      var list = document.querySelector('ul');
+      list.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'LI') {
+          ev.target.classList.toggle('checked');
+        }
+      }, false);
+      
+      // Create a new list item when clicking on the "Add" button
+      function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === '') {
+        } else {
+          document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+      
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+      
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+      }
+      </script>
+
+    <div><br></div>
 </body>
 </html>

@@ -1,19 +1,3 @@
-var count = 1;
-    function setColor(btn, color) {
-        var property = document.getElementById(btn);
-        if (count == 0) {
-            property.style.backgroundColor = green
-            count = 1;        
-        }
-        else {
-            property.style.backgroundColor = grey
-            count = 0;
-        }
-    }
-
-
-
-
 // general quotes
 var generalquotes = [
     'You are worth so much.',
