@@ -30,6 +30,9 @@
         <p>Click any of the below buttons to generate a motivational message you might need.</p>
         <a href="#generalmsg">General motivational messages <br></a>
         <a href="#workmsg">Work or study motivational messages <br></a>
+        <a href="#famousmsg">Motivational quotes <br></a>
+        <a href="#selfmsg"> Self improvement quotes <br></a>
+    </div>
     </div>
 
     <!-- General -->
@@ -37,11 +40,12 @@
     <div class = "themetext">
         <h2>General motivational messages<h2>
     </div>
-    <!-- Message generator -->
-    <div id="generalquoteDisplay">
-        <!-- Quotes here -->
+    <div class = "themetext">
+        <div id="generalquoteDisplay">
+            <p></p>
+        </div>
+            <button onclick="generalnewQuote()">Generate</button>
     </div>
-    <button onclick="generalnewQuote()">Generate</button>
 
 
     <!-- Work or study -->
@@ -49,21 +53,37 @@
     <div class = "themetext">
         <h2>Work or study motivational messages<h2>
     </div>
-    <div id="workquoteDisplay">
+    <div class = "themetext">
+        <div id="workquoteDisplay">
+            <p></p>
+        </div>
+            <button onclick="worknewQuote()">Generate</button>
     </div>
-    <button onclick="worknewQuote()">Generate</button>
-    
 
     <!-- Famous -->
     <a id="famousmsg"></a>
     <div class = "themetext">
         <h2>Motivational quotes<h2>
     </div>
-    <div id="famousquoteDisplay">
+    <div class = "themetext">
+        <div id="famousquoteDisplay">
+            <p></p>
+        </div>
+            <button onclick="famousnewQuote()">Generate</button>
     </div>
-    <button onclick="famousnewQuote()">Generate</button>
+    
+    <!-- Self improvement -->
+    <a id="selfmsg"></a>
+    <div class = "themetext">
+        <h2>Self improvement messages<h2>
+    </div>
+    <div class = "themetext">
+        <div id="selfquoteDisplay">
+            <p></p>
+        </div>
+            <button onclick="selfnewQuote()">Generate</button>
+    </div>
     
     <script src="javascript.js"></script>
-
 </body>
 </html>
