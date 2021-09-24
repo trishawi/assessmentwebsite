@@ -118,7 +118,7 @@ ul.themelist {
     position: relative;
 }
 
-.storyboardheroimage {
+.page5heroimage {
     background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url(Images/simon-wilkes-S297j2CsdlM-unsplash.jpg);
     height: 50%;
     background-position: center;
