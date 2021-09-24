@@ -8,7 +8,7 @@ body, html {
 /*theme colours and fonts*/
 @font-face {
     font-family: themefont;
-    src: url(/Fonts/Crimson_Text/CrimsonText-Regular.ttf);
+    src: url(Fonts/Crimson_Text/CrimsonText-Regular.ttf);
 }
 
 :root {
@@ -74,7 +74,7 @@ ul.themelist {
 
 /* hero image */
 .homeheroimage {
-    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("Images/alex-dukhanov-mrTYJBU9Vls-unsplash.jpg");
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url(Images/alex-dukhanov-mrTYJBU9Vls-unsplash.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@ ul.themelist {
 }
 
 .page1heroimage {
-    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/david-edelstein-VO5yUwRosiY-unsplash.jpg");
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url(Images/david-edelstein-VO5yUwRosiY-unsplash.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ ul.themelist {
 }
 
 .page2heroimage {
-    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/faye-cornish-Uq3gTiPlqRo-unsplash.jpg");
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url(Images/faye-cornish-Uq3gTiPlqRo-unsplash.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ ul.themelist {
 }
 
 .page3heroimage {
-    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg");
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url(Images/filip-zrnzevic-QsWG0kjPQRY-unsplash.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ ul.themelist {
 }
 
 .page4heroimage {
-    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/matthew-smith-rFBA42UFpLs-unsplash.jpg");
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url(Images/matthew-smith-rFBA42UFpLs-unsplash.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -119,7 +119,7 @@ ul.themelist {
 }
 
 .storyboardheroimage {
-    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url("/Images/simon-wilkes-S297j2CsdlM-unsplash.jpg");
+    background-image: linear-gradient(var(--themetranslucentgreen), var(--themetranslucentgreen)), url(Images/simon-wilkes-S297j2CsdlM-unsplash.jpg);
     height: 50%;
     background-position: center;
     background-repeat: no-repeat;
