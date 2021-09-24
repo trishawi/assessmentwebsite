@@ -31,17 +31,12 @@
     </div>
 
     <div id="myDIV" class="header">
-        <input type="text" id="myInput" placeholder="Add thing to be grateful for">
+        <h2 style="margin:5px">My Grateful List</h2>
+        <input type="text" id="myInput" placeholder="Things to be grateful for...">
         <span onclick="newElement()" class="addBtn">Add</span>
       </div>
       
-      <ul id="myUL">
-        <li>Drink water</li>
-        <li>Exercise</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
+      <ul class = "check" id="myUL">
       </ul>
       
       <script>
@@ -59,19 +54,18 @@
       
         var span = document.createElement("SPAN");
         var txt = document.createTextNode("\u00D7");
-        span.className = "close";
         span.appendChild(txt);
         li.appendChild(span);
       
         for (i = 0; i < close.length; i++) {
           close[i].onclick = function() {
             var div = this.parentElement;
-            div.style.display = "none";
           }
         }
       }
       </script>
 
+    </div>
     <div><br></div>
 </body>
 </html>

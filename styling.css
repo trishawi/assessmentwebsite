@@ -5,6 +5,10 @@ body, html {
     font-family: themefont;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /*theme colours and fonts*/
 @font-face {
     font-family: themefont;
@@ -58,19 +62,6 @@ ul.themelist {
     white-space: wrap;
     list-style-type: circle;
 }
-
-
-/*header*/
-.themeheader {
-    font-family: themefont;
-    color : var(--themewhite);
-    width : 100%;
-    background-color: var(--themegreen);
-    height : 60px;
-    text-align: center;
-    line-height: 80px;
-}
-
 
 /* hero image */
 .homeheroimage {
@@ -137,7 +128,7 @@ ul.themelist {
 }
 
 
-/*sticky navigation bar*/
+/*navigation bar*/
 ul.nav {
     list-style-type: none;
     margin: 0;
@@ -146,7 +137,7 @@ ul.nav {
     color: var(--themewhite);
     overflow: hidden;
     background-color: var(--themegreen);
-    position:sticky;
+    position:relative;
     top: 0;
 }
     
@@ -193,54 +184,47 @@ li a:hover:not(.active) {
 .button:focus {
     background-color: var(--themegreen);
     box-shadow: 0 7px var(--themedarkergreen);
-
+}
 /* list */
-.themelist {
-        margin: 0;
-        min-width: 250px;
-    }
 
-    /* Include the padding and border in an element's total width and height */
-    * {
-        box-sizing: border-box;
-    }
-
-    /* Remove margins and padding from the list */
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Style the list items */
-    ul li {
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul.check li {
     cursor: pointer;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    margin: 0px;
+    border: 0;
+    padding: 10px;
     list-style-type: none;
-    background: #eee;
-    font-size: 18px;
+    background: var(--themewhite);
+    font-size: 16px;
     transition: 0.2s;
-    }
-
-    /* Set all odd list items to a different color (zebra-stripes) */
-    ul li:nth-child(odd) {
-    background: #f9f9f9;
-    }
-
-    /* Darker background-color on hover */
-    ul li:hover {
-    background: #ddd;
-    }
-
-    /* When clicked on, add a background color and strike out text */
-    ul li.checked {
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul.check li:nth-child(odd) {
+    background: var(--themewhite);
+  }
+  
+  /* Darker background-color on hover */
+  ul.check li:hover {
+    background: var(--themelightgrey);
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul.check li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
-    }
-
-    /* Add a "checked" mark when clicked on */
-    ul li.checked::before {
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul.check li.checked::before {
     content: '';
     position: absolute;
     border-color: #fff;
@@ -251,26 +235,35 @@ li a:hover:not(.active) {
     transform: rotate(45deg);
     height: 15px;
     width: 7px;
-    }
-
-    /* Style the header */
-    .header {
-
+  }
+  
+  /* Style the close button */
+  .close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    visibility: hidden;
+  }
+  
+  /* Style the header */
+  .header {
     background-color: var(--themegreen);
     padding: 30px 40px;
-    color: var(--themewhite);
+    color: white;
     text-align: center;
-    }
-
-    /* Clear floats after the header */
-    .header:after {
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
     content: "";
     display: table;
     clear: both;
-    }
-
-    /* Style the input */
-    input {
+  }
+  
+  /* Style the input */
+  input {
+    font-family: themefont;
     margin: 0;
     border: none;
     border-radius: 0;
@@ -278,24 +271,38 @@ li a:hover:not(.active) {
     padding: 10px;
     float: left;
     font-size: 16px;
-    }
-
-    /* Style the "Add" button */
-    .addBtn {
+  }
+  
+  /* Style the "Add" button */
+  .addBtn {
     padding: 10px;
     width: 25%;
-    background: var(--themelightgrey);
-    color: var(--themeblack);
+    background: #d9d9d9;
+    color: #555;
     float: left;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
     border-radius: 0;
-    }
-
-    .addBtn:hover {
+  }
+  
+  .addBtn:hover {
     background-color: #bbb;
-    }
+  }
 
-}
+  .extraspace {
+      min-height: 100px;
+  }
+
+  table {
+    font-family: themefont;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid var(--themegreen);
+    text-align: left;
+    padding: 8px;
+  }
